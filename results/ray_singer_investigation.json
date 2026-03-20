@@ -1,0 +1,8 @@
+{
+  "RS_torsion_trivial_bundle": 1.0,
+  "twisted_torsion": "non-trivial at a=1/2",
+  "U1_toy_det_ratio": 1024.0,
+  "self_dual_lattice": true,
+  "Quillen_reproduces_WHM": true,
+  "status": "promising for follow-up"
+}

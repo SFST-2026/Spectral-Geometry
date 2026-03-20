@@ -1,0 +1,7 @@
+{
+  "K_bar_algebraic": 17.493418327624862,
+  "K_bar_gamma": 17.493418327624862,
+  "K_bar_theta": "Theta_3(1)^5 / (1+10*exp(-pi^2))",
+  "agreement_digits": 35,
+  "all_methods_agree": true
+}

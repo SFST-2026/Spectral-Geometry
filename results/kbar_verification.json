@@ -1,0 +1,15 @@
+{
+  "K_bar_algebraic": 17.493418327624862,
+  "K_bar_expected": 17.493418327624862,
+  "agreement_digits": 35,
+  "R_independent": true,
+  "R_values_tested": [
+    0.1,
+    0.3,
+    0.5,
+    0.7,
+    1.0,
+    2.0,
+    10.0
+  ]
+}

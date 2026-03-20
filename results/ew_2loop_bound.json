@@ -1,0 +1,11 @@
+{
+  "delta_EW_central_ppb": 3.0,
+  "range_ppb": [
+    0.5,
+    50
+  ],
+  "W_contribution": "cancels (same SU(2) Casimir)",
+  "Z_contribution": "non-universal vertex correction",
+  "alpha_W_over_4pi": 0.0027,
+  "Delta_CZ": 0.05
+}

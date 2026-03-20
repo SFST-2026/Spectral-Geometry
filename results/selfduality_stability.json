@@ -1,0 +1,6 @@
+{
+  "R_selfdual": 0.5,
+  "T_duality_fixed_point": true,
+  "Poisson_selfdual": true,
+  "K_bar_exact_at_selfdual": true
+}

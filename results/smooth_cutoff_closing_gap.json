@@ -1,0 +1,12 @@
+{
+  "cutoff_types": [
+    "sharp",
+    "gaussian",
+    "optimal",
+    "heat-kernel",
+    "Fermi"
+  ],
+  "K_bar_all": 17.493418327624862,
+  "gap_closed": true,
+  "mechanism": "Epstein zeta is cutoff-independent"
+}

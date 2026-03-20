@@ -1,0 +1,6 @@
+{
+  "Lambda_star": 2.0,
+  "R": 0.5,
+  "relation": "Lambda* = 1/R (KK scale)",
+  "Wilsonian_matching": true
+}

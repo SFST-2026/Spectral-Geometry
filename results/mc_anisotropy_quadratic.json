@@ -1,0 +1,10 @@
+{
+  "N_samples": 1000,
+  "eps_range": [
+    0,
+    0.05
+  ],
+  "mean_correction_ppm": 2035.0648880045494,
+  "max_correction_ppm": 6246.471414253968,
+  "quadratic_confirmed": true
+}

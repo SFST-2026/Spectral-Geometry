@@ -1,0 +1,6 @@
+{
+  "BC_type": "Ramond (periodic)",
+  "alternative": "Neveu-Schwarz (anti-periodic)",
+  "selection": "Ramond unique: isotropy + massless fermion sector",
+  "sign_criterion": "instanton correction must be positive"
+}

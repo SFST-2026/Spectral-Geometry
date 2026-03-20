@@ -1,0 +1,10 @@
+{
+  "steps": [
+    "5D QFT on T^5",
+    "KK decomposition",
+    "Wilsonian matching at 1/R",
+    "4D EFT below 1/R",
+    "spectral determinant ratio"
+  ],
+  "result": "|W| * K_bar^(Delta_n)"
+}

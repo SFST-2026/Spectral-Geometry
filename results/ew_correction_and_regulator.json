@@ -1,0 +1,12 @@
+{
+  "regulators": [
+    "sharp",
+    "gaussian",
+    "optimal",
+    "heat-kernel",
+    "Fermi"
+  ],
+  "K_bar_all": 17.493418327624862,
+  "regulator_independent": true,
+  "delta_EW_ppb": 3.0
+}

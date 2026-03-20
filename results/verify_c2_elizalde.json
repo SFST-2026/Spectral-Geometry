@@ -1,0 +1,6 @@
+{
+  "c2_elizalde": 1.3578679513998633,
+  "c2_hurwitz": 1.3578679513998633,
+  "method": "Elizalde zeta-regularization on T^5",
+  "agrees_with_hurwitz": true
+}

@@ -1,0 +1,6 @@
+{
+  "c3_numerical": 0.051,
+  "method": "extracted from V1-V3 residual",
+  "alpha_shift_ppb": 0.46,
+  "status": "numerical, no closed form"
+}

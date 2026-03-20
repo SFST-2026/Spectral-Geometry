@@ -1,0 +1,86 @@
+{
+  "V1": {
+    "formula": "6*pi^5*(1+alpha^2/sqrt(8))",
+    "value": 1836.1526776688872,
+    "exp": 1836.15267343,
+    "dev_ppm": 0.002
+  },
+  "V2": {
+    "formula": "m_e*(8/pi-2*alpha)",
+    "value": 1.2937929203985896,
+    "exp": 1.29333,
+    "dev_ppm": 354
+  },
+  "V3": {
+    "formula": "-2*ln(alpha)=pi^2-4*alpha+c2*alpha^2",
+    "dev_ppm": 0.009
+  },
+  "V4": {
+    "prediction": "N_c=3",
+    "status": "exact"
+  },
+  "V5": {
+    "prediction": "|W|=6",
+    "status": "exact"
+  },
+  "V6": {
+    "prediction": "d=5",
+    "status": "exact"
+  },
+  "V7": {
+    "prediction": "Delta_n=2",
+    "status": "exact"
+  },
+  "V8": {
+    "prediction": "Q_u=2/3",
+    "status": "exact"
+  },
+  "V9": {
+    "prediction": "Q_d=-1/3",
+    "status": "exact"
+  },
+  "V10": {
+    "prediction": "Ramond BC",
+    "status": "exact"
+  },
+  "V11": {
+    "prediction": "a=1/2 Hosotani",
+    "status": "exact"
+  },
+  "V13": {
+    "prediction": "alpha^1 cancellation",
+    "status": "exact"
+  },
+  "V14": {
+    "prediction": "1/sqrt(8) normalization",
+    "status": "derived"
+  },
+  "V15": {
+    "prediction": "R-independence",
+    "status": "proven"
+  },
+  "V16": {
+    "prediction": "UV finiteness",
+    "status": "proven"
+  },
+  "V17": {
+    "prediction": "anisotropy rigidity",
+    "status": "proven"
+  },
+  "V18": {
+    "prediction": "theta_QCD=0",
+    "status": "structural"
+  },
+  "V19": {
+    "prediction": "N_gen=3",
+    "status": "structural"
+  },
+  "V20": {
+    "prediction": "proton stable",
+    "status": "structural"
+  },
+  "V21": {
+    "prediction": "c2 unique",
+    "status": "derived"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "alpha_s_at_1overR": 0.001935002806105422,
+  "mu_UV_GeV": 2.44e+19,
+  "running": "5D power-law above 1/R, 4D log below",
+  "alpha_s_MZ_estimate": "0.07-0.09 (1-loop, qualitative)"
+}

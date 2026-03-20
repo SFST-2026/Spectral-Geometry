@@ -1,0 +1,142 @@
+{
+  "1": {
+    "C1": false,
+    "C2": false,
+    "C3": false,
+    "C4": true,
+    "all": false
+  },
+  "2": {
+    "C1": false,
+    "C2": false,
+    "C3": false,
+    "C4": false,
+    "all": false
+  },
+  "3": {
+    "C1": false,
+    "C2": true,
+    "C3": false,
+    "C4": true,
+    "all": false
+  },
+  "4": {
+    "C1": true,
+    "C2": false,
+    "C3": false,
+    "C4": false,
+    "all": false
+  },
+  "5": {
+    "C1": true,
+    "C2": true,
+    "C3": true,
+    "C4": true,
+    "all": true
+  },
+  "6": {
+    "C1": false,
+    "C2": false,
+    "C3": true,
+    "C4": false,
+    "all": false
+  },
+  "7": {
+    "C1": false,
+    "C2": false,
+    "C3": false,
+    "C4": true,
+    "all": false
+  },
+  "8": {
+    "C1": false,
+    "C2": false,
+    "C3": false,
+    "C4": false,
+    "all": false
+  },
+  "9": {
+    "C1": false,
+    "C2": false,
+    "C3": false,
+    "C4": true,
+    "all": false
+  },
+  "10": {
+    "C1": false,
+    "C2": false,
+    "C3": false,
+    "C4": false,
+    "all": false
+  },
+  "11": {
+    "C1": false,
+    "C2": false,
+    "C3": false,
+    "C4": true,
+    "all": false
+  },
+  "12": {
+    "C1": false,
+    "C2": false,
+    "C3": false,
+    "C4": false,
+    "all": false
+  },
+  "13": {
+    "C1": false,
+    "C2": false,
+    "C3": false,
+    "C4": true,
+    "all": false
+  },
+  "14": {
+    "C1": false,
+    "C2": false,
+    "C3": false,
+    "C4": false,
+    "all": false
+  },
+  "15": {
+    "C1": false,
+    "C2": false,
+    "C3": false,
+    "C4": true,
+    "all": false
+  },
+  "16": {
+    "C1": false,
+    "C2": false,
+    "C3": false,
+    "C4": false,
+    "all": false
+  },
+  "17": {
+    "C1": false,
+    "C2": false,
+    "C3": false,
+    "C4": true,
+    "all": false
+  },
+  "18": {
+    "C1": false,
+    "C2": false,
+    "C3": false,
+    "C4": false,
+    "all": false
+  },
+  "19": {
+    "C1": false,
+    "C2": false,
+    "C3": false,
+    "C4": true,
+    "all": false
+  },
+  "20": {
+    "C1": false,
+    "C2": false,
+    "C3": false,
+    "C4": false,
+    "all": false
+  }
+}

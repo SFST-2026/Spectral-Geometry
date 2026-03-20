@@ -1,0 +1,13 @@
+{
+  "K_bar": 17.493418327624862,
+  "W": 6,
+  "Delta_n": 2,
+  "m_ratio_LO": 1836.1181087116884,
+  "m_ratio_NLO": 1836.1526776688872,
+  "steps": [
+    "Vol(T^5)",
+    "HK normalization",
+    "Weyl identity",
+    "instanton correction"
+  ]
+}

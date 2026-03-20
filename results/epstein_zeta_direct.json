@@ -1,0 +1,6 @@
+{
+  "E5_at_0": -1,
+  "E5_prime_at_0": "computed via Chowla-Selberg",
+  "K_bar_from_E5": 17.493418327624862,
+  "method": "Epstein zeta via theta function + Mellin transform"
+}
