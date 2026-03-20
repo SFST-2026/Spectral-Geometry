@@ -1,0 +1,4 @@
+label,formula,nominal_error,status
+V1,m_p/m_e = 6*pi^5*(1+alpha^2/sqrt(8)),0.002 ppm,target structure
+V2,Delta m_(n-p) = m_e*(8/pi - 2 alpha),354 ppm,conditional test
+V3,alpha = exp(-(pi^2 - 4 alpha)/2),~37 ppm,empirical fixed point

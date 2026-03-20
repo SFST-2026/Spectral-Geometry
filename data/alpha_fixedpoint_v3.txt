@@ -1,0 +1,4 @@
+Implicit relation: alpha = exp(-(pi^2 - 4 alpha)/2)
+Equivalent Lambert-W form: alpha = -1/2 * W_0(-2 exp(-pi^2/2))
+Numeric solution alpha = 0.00729762037649776
+Inverse alpha = 137.030970153029
