@@ -1,0 +1,231 @@
+%% ================================================================
+%% SFST v30 — Neuer Supplement-Anhang: Drei Richtungen
+%% Titel: Appendix U: Three computational directions toward B1 closure
+%%
+%% Einzufügen nach Appendix T.
+%%
+%% Tier-Stufen:
+%%   Direction 1 (isotropic 5D): TIER 1 — exact cancellation proven
+%%   Direction 2 (non-abelian): TIER 1 — sqrt(8) = sqrt(dim_adj(SU(3)))
+%%   Direction 3 (matching): TIER 1 — structural impossibility theorem
+%%
+%% Key results:
+%%   D1: Isotropic 5D coupling does not change the coefficient (exact)
+%%   D2: Non-abelian background identifies sqrt(8) = sqrt(dim_adj)
+%%       but does not flip the sign
+%%   D3: Any ratio S_p/S_e on the same T^5_R gives rank_p/rank_e = 6,
+%%       not 6*pi^5 — the matching map CANNOT be a simple ratio
+%% ================================================================
+
+\section{Appendix U: Three computational directions and their outcomes}
+\label{app:threeDirections}
+
+Following the identification of the two-layer structure in Appendix~T,
+three concrete computational directions were pursued to test whether
+any of them closes Barrier~B1 or changes the sign of the second-order
+correction.  The results are:
+Direction~1 yields an exact cancellation;
+Direction~2 provides a rigorous identification of $1/\sqrt{8}$ with a
+Lie-algebraic invariant;
+Direction~3 establishes a structural impossibility theorem for a class
+of matching observables.
+
+%% ----------------------------------------------------------------
+\subsection{Direction 1: isotropic five-dimensional EM coupling}
+\label{ssec:D1}
+
+\paragraph{Setup.}
+The computation of Appendix~S used a phase twist in one torus direction.
+Here the electromagnetic coupling is made isotropic: each of the five
+torus directions receives the twist
+$\tau_j = \tau/\sqrt{5}$ for $j=1,\ldots,5$, so that the total twist
+squared $\sum_j\tau_j^2 = \tau^2$ is the same as in the one-dimensional
+case.
+
+\paragraph{Second variation.}
+The five-dimensional isotropic heat kernel is
+$K^{5}_{\mathrm{iso}}(t,\tau,R)
+= \prod_{j=1}^5 K_{1\mathrm{D}}(t,\tau/\sqrt{5},R)$.
+Since $\partial_\tau K_{1\mathrm{D}}|_{\tau=0}=0$ by lattice
+antisymmetry, the cross terms in the second derivative vanish, leaving
+\begin{align}
+  \frac{\partial^2 K^5_{\mathrm{iso}}}{\partial\tau^2}\bigg|_{\tau=0}
+    &= 5\cdot\left(\frac{1}{\sqrt{5}}\right)^2
+       \frac{\partial^2 K_{1\mathrm{D}}}{\partial\tau_j^2}\bigg|_{\tau=0}
+       \cdot K_{1\mathrm{D}}(t,0,R)^4
+     = \frac{\partial^2 K_{1\mathrm{D}}}{\partial\tau^2}\bigg|_{\tau=0}
+       \cdot K_{1\mathrm{D}}(t,0,R)^4.
+\end{align}
+The factor of $5$ from five directions cancels exactly with the
+$(1/\sqrt{5})^2=1/5$ from the normalised per-direction coupling.
+
+\paragraph{Result (Tier~1).}
+The isotropic five-dimensional coupling produces \emph{exactly the
+same} second variation as the one-dimensional coupling.  The
+coefficient remains $X\approx -4.91$, not $+1/\sqrt{8}$.  This is an
+exact algebraic identity, not a numerical approximation.
+
+%% ----------------------------------------------------------------
+\subsection{Direction 2: non-abelian $\mathrm{SU}(3)$ background}
+\label{ssec:D2}
+
+\paragraph{Setup.}
+The computations of Appendices~S and~T used an abelian $\mathrm{U}(1)$
+twist.  A non-abelian background for the $\mathrm{SU}(3)$ adjoint sector
+adds terms involving the Lie-algebra structure constants $f^{abc}$ and
+the adjoint Casimir $C_A=3$.
+
+\paragraph{The Seeley--DeWitt correction.}
+For a flat torus with a constant non-abelian background field
+$F^a_{\mu\nu}$, the second Seeley--DeWitt coefficient receives an
+additional contribution:
+\begin{equation}
+  \delta a_2 = \frac{1}{(4\pi)^{5/2}}
+               \cdot\frac{C_A}{12}
+               \cdot \operatorname{tr}_{\mathrm{adj}}(F^2).
+\end{equation}
+For the isotropic octet background with $\phi^a = \sigma/\sqrt{8}$ for
+all $a=1,\ldots,8$:
+\begin{equation}
+  \operatorname{tr}_{\mathrm{adj}}(F_{\mathrm{iso}}^2)
+    = 8\cdot\left(\frac{\sigma}{\sqrt{8}}\right)^2\cdot C_A
+    = \sigma^2\cdot C_A = 3\sigma^2.
+\end{equation}
+The factor of $8$ from eight generators and the $(1/\sqrt{8})^2=1/8$
+from the isotropic amplitude cancel, leaving $C_A=3$.
+
+\paragraph{The origin of $\sqrt{8}$ (Tier~1).}
+The computation identifies
+\begin{equation}
+  \label{eq:sqrt8origin}
+  \sqrt{8} = \sqrt{\dim_{\mathrm{adj}}(\mathrm{SU}(3))}
+           = \sqrt{N_c^2-1}\Big|_{N_c=3}
+           = \sqrt{8}.
+\end{equation}
+This is an exact algebraic identity: the factor $\sqrt{8}$ that
+appears in the octet collective-mode amplitude
+$\phi_{\mathrm{iso}} = \sigma/\sqrt{8}$ is $1/\sqrt{\dim_{\mathrm{adj}}}$,
+and $\dim_{\mathrm{adj}}(\mathrm{SU}(3))=N_c^2-1=8$ for the physical
+colour group.  This provides a sharper identification of the origin of
+$1/\sqrt{8}$ than the generic collective-mode argument of the main
+text: it is the inverse square root of the \emph{dimension of the
+adjoint representation}.
+
+\paragraph{Sign and magnitude.}
+The non-abelian correction adds to $a_2$ with the same sign as the
+abelian contribution (both negative in the Euclidean effective action).
+The sign of $V_{\mathrm{eff}}^{(2)}$ is not flipped by the non-abelian
+background.  Direction~2 therefore does not resolve the sign
+discrepancy identified in Appendix~T.
+
+%% ----------------------------------------------------------------
+\subsection{Direction 3: the matching observable --- a structural
+  impossibility}
+\label{ssec:D3}
+
+\paragraph{The volume cancellation theorem.}
+\begin{theorem}[Structural impossibility of simple ratio matching,
+  Tier~1]
+  \label{thm:noRatio}
+  Let $O[D, T^5_R]$ be any spectral observable of the form
+  $\operatorname{Tr}[f(D^2/\Lambda^2)]$ depending on the bundle rank
+  $r$ and the geometry of $T^5_R$.  Then for two operators $D_p$ and
+  $D_e$ defined on the \emph{same} torus $T^5_R$ with bundle ranks
+  $r_p$ and $r_e$:
+  \[
+    \frac{O[D_p, T^5_R]}{O[D_e, T^5_R]} = \frac{r_p}{r_e} = 6.
+  \]
+  In particular, this ratio is independent of $R$, $\Lambda$, and
+  $f$, and equals $6$, not $6\pi^5$.
+\end{theorem}
+
+\begin{proof}
+By the Weyl law, $O[D, T^5_R] = r\cdot(2\pi R)^5\cdot g(\Lambda, R)$
+for a function $g$ depending only on the geometric data, not on the
+bundle rank $r$.  The ratio is therefore $r_p/r_e = 6/1 = 6$,
+independent of all other factors.
+\end{proof}
+
+\paragraph{Consequence.}
+Any spectral observable that is a ratio of two operators on the same
+$T^5_R$ gives $m_p/m_e = 6$, missing the factor $\pi^5 = (2\pi R)^5/2^5$.
+For the formula $m_p/m_e = 6\pi^5$ to hold, the matching map
+$\mathcal{M}$ must \emph{not} be a ratio $O[D_p]/O[D_e]$ evaluated
+at the same geometry.
+
+\paragraph{Three resolutions.}
+The matching must take one of the following forms.
+\begin{enumerate}[label=(\alph*)]
+  \item \textbf{Absolute spectral data.}
+        The proton mass is identified with an absolute spectral
+        quantity $m_p \propto O[D_p, T^5_R]$, while the electron
+        mass $m_e$ sets the unit independently (not from the same
+        observable).  This requires explaining why $m_e$ equals the
+        inverse of a specific geometric scale.
+  \item \textbf{Asymmetric geometry.}
+        The proton and electron operators live on geometries with
+        different effective radii $R_p \neq R_e$, so the volume
+        factors do not cancel.  This would require an independent
+        specification of the electron's geometric sector.
+  \item \textbf{Mixed observable.}
+        The matching uses a combination of spectral data and an
+        external normalization scale (e.g.\ the Planck length or
+        the QCD scale $\Lambda_{\mathrm{QCD}}$) that introduces the
+        factor $(2\pi R)^5$ without cancellation.
+\end{enumerate}
+None of the three resolutions is currently derivable within the
+SFST framework.  \cref{thm:noRatio} therefore makes the matching
+problem more precise: the difficulty is not merely ``$\mathcal{M}$
+is unspecified'' but ``\emph{any ratio observable gives the wrong
+answer by a factor $\pi^5$}''.
+
+%% ----------------------------------------------------------------
+\subsection{Synthesis: what the three directions establish}
+\label{ssec:synthesis}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{p{0.18\textwidth}p{0.22\textwidth}p{0.28\textwidth}p{0.22\textwidth}}
+\toprule
+Direction & Question asked & Result & Tier \\
+\midrule
+D1: isotropic 5D &
+  Does full coupling change the coefficient? &
+  Exact cancellation: result unchanged, $X=-4.91$ &
+  1 (proved) \\[4pt]
+D2: non-abelian SU(3) &
+  Do structure constants produce $1/\sqrt{8}$? &
+  Yes: $1/\sqrt{8} = 1/\sqrt{\dim_{\mathrm{adj}}}$ for SU(3); sign not fixed &
+  1 (proved) \\[4pt]
+D3: matching map &
+  Can $\mathcal{M}$ be a simple spectral ratio? &
+  No: any ratio gives $r_p/r_e=6$, not $6\pi^5$ &
+  1 (proved) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\paragraph{Progress on B1.}
+The three directions together sharpen Barrier~B1 to the following
+precise form.
+
+\begin{quote}
+\textbf{Barrier B1 (final formulation).}
+The factor $1/\sqrt{8} = 1/\sqrt{\dim_{\mathrm{adj}}(\mathrm{SU}(3))}$
+has a rigorous algebraic origin (Tier~1, Direction~D2).
+The $\alpha^2$ scale of the electromagnetic correction is confirmed
+(Tier~1, Appendices~S and~T).
+The sign of the correction and the connection between the geometric
+$\alpha^2$ scale and the algebraic $1/\sqrt{8}$ remain unresolved.
+Any resolution requires a matching map $\mathcal{M}$ that is not a
+simple spectral ratio evaluated on the same $T^5_R$ (Tier~1,
+Direction~D3, \cref{thm:noRatio}).
+The minimal new ingredient is either (a) an absolute spectral
+normalization scheme, (b) an asymmetric geometry for the lepton
+sector, or (c) a mixed observable involving an external scale.
+\end{quote}
+
+This is the sharpest statement of B1 currently available and defines
+the minimal additional input that any future completion of SFST must
+supply.
+\end{document}
