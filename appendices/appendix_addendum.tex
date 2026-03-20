@@ -1,1 +1,85 @@
+%% ================================================================
+%% Appendix addendum: EW upper bound, falsification page,
+%% and Colab reference
+%% ================================================================
 
+%% Already in Z11; this addendum goes into the Z12 comprehensive section
+%% as subsection Z12.7
+
+\subsection{Controlled 2-loop electroweak upper bound}
+\label{sec:ew_bound}
+
+The $W$-boson contribution to $m_p/m_e$ \emph{cancels} in the ratio:
+both quarks and electrons carry $C_2(\mathrm{SU}(2))=3/4$, so
+$\Delta C_W = 0$ at every loop order. This is the weak analog of the
+electromagnetic $\alpha^1$-cancellation.
+
+The surviving $Z$-boson correction enters at 2-loop (mixed QCD$\times$EW
+diagram). Using the SFST 2-loop structure:
+\begin{equation}\label{eq:ew_bound}
+  \delta_{\mathrm{EW}}
+  = \frac{\alpha_W}{4\pi}\cdot\Delta C_Z\cdot\frac{\alpha^2}{\sqrt{8}},
+  \qquad
+  \Delta C_Z = \frac{2(g_V^2\!+\!g_A^2)_u + (g_V^2\!+\!g_A^2)_d}{3}
+    - (g_V^2\!+\!g_A^2)_e,
+\end{equation}
+where only the \emph{non-universal} vertex corrections (not absorbed into
+the running of~$\alpha$) contribute. With
+$\alpha_W/(4\pi)\approx 2.7\times 10^{-3}$ and $\Delta C_Z\approx 0.05$:
+\begin{equation}\label{eq:ew_central}
+  \delta_{\mathrm{EW}}
+  \approx 2.7\times 10^{-3}\times 0.05\times 1.88\times 10^{-5}
+  \approx 3\;\mathrm{ppb}
+  \qquad(\text{range: }0.5\text{--}50\;\mathrm{ppb}).
+\end{equation}
+This is consistent with the current residual of $+2.3\,$ppb and below
+experimental precision ($\sim\!6\,$ppb). The correction does \emph{not}
+affect the sub-ppm claim.
+
+Script: \texttt{ew\_2loop\_upper\_bound.py}.
+
+%% ================================================================
+\subsection{What would kill SFST: ten falsification criteria}
+\label{sec:kill}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.25}\small
+\begin{tabular}{clp{3.2cm}p{3.8cm}}
+\toprule
+\# & \textbf{Criterion} & \textbf{Tolerance} & \textbf{Experiment / method}\\
+\midrule
+1 & $m_p/m_e \neq 6\pi^5(1+\alpha^2/\!\sqrt{8})$
+  & $|\Delta|>0.01\,$ppm & Penning trap (BASE, ALPHATRAP)\\
+2 & $\alpha$ (2-loop) $\neq$ experiment
+  & $|\Delta\alpha/\alpha|>10^{-10}$ & Cs-133 interferometry\\
+3 & $\Delta m_{n\text{-}p}\neq m_e(8/\pi-2\alpha)$
+  & $|\Delta|>1000\,$ppm & neutron $\beta$-decay\\
+4 & $c_2\notin [0.86,\;1.86]$
+  & --- & derived from V1$\cap$V3\\
+5 & $|W|\neq 6$
+  & exact & structural (SU(3) Weyl group)\\
+6 & $\Delta n\neq 2$
+  & exact & structural (unique integer)\\
+7 & $\theta_{\mathrm{QCD}}\neq 0$
+  & $>10^{-10}$ & nEDM at $10^{-28}\,e\!\cdot\!\mathrm{cm}$\\
+8 & Proton decays
+  & any event & Hyper-K, DUNE ($\tau>10^{35}\,$yr)\\
+9 & 4th generation found
+  & any signal & LHC Run~3+\\
+10 & $\delta_{\mathrm{EW}}>50\,$ppb
+  & upper bound & future 2-loop calculation\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\noindent
+Criteria 1--3 are testable with \emph{existing} experiments.
+Criteria 4--6 are structural and already verified.
+Criteria 7--9 are testable within 5--10 years.
+Criterion~10 requires a dedicated calculation.
+
+The criteria are \emph{correlated}: if criterion~1 fails,
+then \emph{either} criterion~4, 5, or~6 must also fail, producing
+a distinctive multi-prediction failure pattern. A random framework
+cannot satisfy all ten criteria simultaneously ($p<10^{-20}$ under
+the null hypothesis; Appendix~\ref{sec:statistics}).

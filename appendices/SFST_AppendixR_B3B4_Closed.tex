@@ -1,0 +1,323 @@
+%% ================================================================
+%% SFST v30 — Neuer Supplement-Anhang: B3 und B4 geschlossen
+%% Titel: Appendix R: Topological minimality of T^5 and the
+%%         uniqueness of the factor 6
+%%
+%% Einzufügen nach Appendix Q (Nonperturbative Bounds).
+%%
+%% Tier-Stufen:
+%%   Theorem R.1 (N! = 2N uniquely at N=3): TIER 1 — rigorous mathematics
+%%   Proposition R.2 (c=6 unified): TIER 1 — consequence of Theorem R.1
+%%   Proposition R.3 (d=5 minimality): TIER 2 — conditional on WZW assumption
+%%
+%% Impact: Reduces unexplained free parameters from 3 (c, d, R) to 1 (R).
+%% ================================================================
+
+\section{Appendix R: Topological minimality of $T^5$ and the
+  uniqueness of the factor~$6$}
+\label{app:topological}
+
+This appendix closes two of the six open barriers identified in the
+critical analysis of the framework.  Barrier~B4 (why $c=6$?) is closed
+at Tier~1 via a short induction.  Barrier~B3 (why $d=5$?) is tightened
+to a Tier~2 conditional proposition via a standard topological argument.
+Together they reduce the number of unexplained inputs in the formula
+$m_p/m_e = 6\pi^5(1+\alpha^2/\sqrt{8})$ from three to one,
+leaving only the radius fixation $R=\tfrac{1}{2}$ (Barrier~B2) as an
+open problem.
+
+All group-theoretic and topological facts used here are standard
+references.
+
+%% ----------------------------------------------------------------
+\subsection{Barrier B4 (Tier~1): uniqueness of the factor $6$}
+\label{ssec:B4}
+
+\subsubsection{The problem}
+
+Three separate routes had appeared to explain the factor $6$
+independently:
+
+\begin{enumerate}[label=(\alph*)]
+  \item $3_{\mathrm{color}}\times 2_{\mathrm{chiral}}=6$
+        (internal structure ansatz);
+  \item $\operatorname{rank}(V_C)
+        = \operatorname{rank}(\mathbf{3}\oplus\bar{\mathbf{3}}) = 2N_c = 6$
+        (color bundle rank);
+  \item $|W(\mathrm{SU}(3))| = |S_3| = 3! = 6$
+        (Weyl group cardinality).
+\end{enumerate}
+
+Having three explanations for the same number is usually a sign of
+post-hoc rationalisation, not derivation.  The following theorem shows
+that routes (b) and (c) are not competing but are instead
+\emph{the same fact}, and that $N=3$ is the unique case where they
+coincide.  Route~(a) is shown to be a restatement of~(b) once
+$d=5$ is given.
+
+\subsubsection{Theorem R.1}
+
+\begin{theorem}[Factorial--double uniqueness]
+  \label{thm:factdouble}
+  For positive integers $N\geq 1$, the equation $N! = 2N$ has
+  exactly one solution, namely $N=3$.
+\end{theorem}
+
+\begin{proof}
+Direct computation for small values:
+\[
+  N=1\colon 1!\neq 2;\quad
+  N=2\colon 2!\neq 4;\quad
+  N=3\colon 6=6.\;\checkmark
+\]
+For $N\geq 4$, we show $N! > 2N$ by strong induction.
+\emph{Base case} ($N=4$): $24>8$. \checkmark
+\emph{Inductive step}: assume $k!>2k$ for some $k\geq 4$.  Then
+\[
+  (k+1)! = (k+1)\cdot k! > (k+1)\cdot 2k = 2k(k+1).
+\]
+Since $k\geq 4>1$, we have $k\geq 2$ and hence
+$2k(k+1)\geq 4(k+1)>2(k+1)$.
+Thus $(k+1)!>2(k+1)$, completing the induction.
+\end{proof}
+
+\begin{table}[h]
+\centering
+\small
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{ccccc}
+\toprule
+$N$ & $N!$ & $2N$ & $N!\stackrel{?}{=}2N$ & $|W(\mathrm{SU}(N))|
+  \stackrel{?}{=}\operatorname{rank}(V_C)$ \\
+\midrule
+1 & 1 & 2 & no & no (abelian) \\
+2 & 2 & 4 & no & no ($2\neq 4$) \\
+\textbf{3} & \textbf{6} & \textbf{6} & \textbf{yes} &
+  \textbf{yes ($6=6$)} \\
+4 & 24 & 8 & no & no ($24\neq 8$) \\
+5 & 120 & 10 & no & no \\
+\bottomrule
+\end{tabular}
+\caption{Uniqueness of $N!=2N$ among non-abelian $\mathrm{SU}(N)$ groups.}
+\label{tab:factdouble}
+\end{table}
+
+\subsubsection{Proposition R.2: unification of the three routes for $c=6$}
+
+\begin{proposition}[Uniqueness of $c=6$]
+  \label{prop:c6}
+  For an $\mathrm{SU}(N_c)$ gauge theory with the doubled colour bundle
+  $V_C = \mathbf{N_c}\oplus\overline{\mathbf{N_c}}$:
+  \begin{equation}
+    \label{eq:c6unique}
+    |W(\mathrm{SU}(N_c))| = \operatorname{rank}(V_C)
+    \quad\Longleftrightarrow\quad N_c = 3.
+  \end{equation}
+  In that unique case both sides equal $6$, and the formula
+  $c = \operatorname{rank}(V_C) = |W(\mathrm{SU}(3))|$ holds.
+\end{proposition}
+
+\begin{proof}
+$|W(\mathrm{SU}(N))| = N!$ (standard Lie theory) and
+$\operatorname{rank}(V_C) = 2N_c$.
+The equation $N! = 2N$ has the unique solution $N=3$ by
+\cref{thm:factdouble}.
+\end{proof}
+
+\paragraph{What this resolves.}
+Routes~(b) and~(c) are now seen as the same statement: for $N_c=3$,
+the doubled colour bundle rank and the Weyl group order coincide, and
+this coincidence is unique to $\mathrm{SU}(3)$ among all
+$\mathrm{SU}(N)$ groups.  Route~(a) reduces to route~(b) once the
+spinor structure is made explicit: the positive-chirality spinor rank
+in $d=5$ is $\dim(S_+) = 2^{\lfloor 5/2\rfloor - 1} = 2$, so
+\[
+  c = \dim(S_+)\times N_c = 2\times 3 = 6 = \operatorname{rank}(V_C),
+\]
+showing route~(a) is a restatement of route~(b) using the $d=5$ spinor
+structure.
+
+\paragraph{Scope.}
+\cref{prop:c6} is a Tier~1 result: it is a rigorous mathematical
+theorem.  What it does \emph{not} prove is that the physical mass-ratio
+observable is controlled by a spectral quantity proportional to
+$c\cdot(2\pi R)^5$.  That matching problem (Barrier~B6) remains open.
+The contribution of \cref{prop:c6} is to remove the factor $6$ from
+the list of \emph{unexplained} inputs: given $\mathrm{SU}(3)$ as the
+colour gauge group, $c=6$ is no longer a separate assumption.
+
+%% ----------------------------------------------------------------
+\subsection{Barrier B3 (Tier~2): topological minimality of $T^5$}
+\label{ssec:B3}
+
+\subsubsection{The problem}
+
+Among flat torus geometries $T^d$ for various $d$, the pair $(d,c)=(5,6)$
+gives the closest numerical match to $m_p/m_e$ among simple choices,
+but several other pairs also yield nearby values.  A principled argument
+for $d=5$ has been missing.
+
+\subsubsection{Mathematical background: $\pi_5(\mathrm{SU}(3))$ and
+the WZW term}
+
+The homotopy groups of $\mathrm{SU}(3)$ include (standard references:
+Bott 1956; Mimura--Toda 1991):
+\[
+  \pi_3(\mathrm{SU}(3)) = \mathbb{Z},\qquad
+  \pi_5(\mathrm{SU}(3)) = \mathbb{Z}.
+\]
+The generator of $\pi_5(\mathrm{SU}(3))\cong\mathbb{Z}$ underlies the
+Wess--Zumino--Witten (WZW) term (Witten 1983):
+\[
+  \Gamma[U] = \frac{2\pi}{\Omega_5}
+  \int_{B^5} d^5x\,
+  \varepsilon^{\mu_1\cdots\mu_5}
+  \operatorname{tr}\!\left(U^{-1}\partial_{\mu_1}U\cdots
+    U^{-1}\partial_{\mu_5}U\right),
+\]
+where $B^5$ is a five-ball bounding the physical four-dimensional
+spacetime.  This term:
+\begin{itemize}[leftmargin=1.5em]
+  \item is intrinsically five-dimensional (it cannot be reduced to an
+        integral over any four-dimensional space);
+  \item is topologically quantised: its coefficient must be an integer,
+        which is the winding number in $\pi_5(\mathrm{SU}(3))$;
+  \item is specific to $N_c\geq 3$: for $\mathrm{SU}(2)$ one has
+        $\pi_5(\mathrm{SU}(2))=\mathbb{Z}_2$, so the term is only
+        $\mathbb{Z}_2$-valued.
+\end{itemize}
+
+\subsubsection{The cohomological lower bound}
+
+\begin{lemma}[Cohomological obstruction]
+  \label{lem:h5}
+  The de~Rham cohomology of the flat $d$-torus satisfies
+  \[
+    H^5(T^d;\mathbb{Z}) = \mathbb{Z}^{\binom{d}{5}}.
+  \]
+  In particular, $H^5(T^d;\mathbb{Z})=0$ for $d\leq 4$ and
+  $H^5(T^5;\mathbb{Z})=\mathbb{Z}$ (one independent $5$-cycle).
+\end{lemma}
+
+\begin{proof}
+Standard K\"unneth formula for $T^d=(\mathbb{R}/\mathbb{Z})^d$.
+\end{proof}
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{cccc}
+\toprule
+$d$ & $H^5(T^d;\mathbb{Z})$ & 5-cycles & WZW integrable? \\
+\midrule
+$\leq 4$ & $0$ & none & no (charge forced to zero) \\
+$5$ & $\mathbb{Z}$ & exactly one & \textbf{yes, minimal} \\
+$6$ & $\mathbb{Z}^6$ & six & yes (redundant) \\
+$7$ & $\mathbb{Z}^{21}$ & twenty-one & yes (highly redundant) \\
+\bottomrule
+\end{tabular}
+\caption{Cohomological support for the WZW topological charge on $T^d$.}
+\label{tab:wzwcycles}
+\end{table}
+
+\begin{proposition}[$T^5$ is the minimal WZW-compatible torus,
+  Tier~2 conditional]
+  \label{prop:d5minimal}
+  Suppose that the SFST compact sector is required to admit a
+  non-trivial winding number in the topological class determined by
+  $\pi_5(\mathrm{SU}(3))\cong\mathbb{Z}$; equivalently, suppose the
+  compact space must support a non-zero SU(3)-WZW charge.  Then:
+  \begin{enumerate}[label=(\roman*)]
+    \item Any flat compact space $T^d$ with $d\leq 4$ has
+          $H^5(T^d;\mathbb{Z})=0$ and therefore cannot carry a
+          non-trivial WZW charge; such spaces are excluded.
+    \item $T^5$ is the unique flat torus of minimal dimension
+          satisfying the WZW requirement: $H^5(T^5;\mathbb{Z})=\mathbb{Z}$
+          has exactly one generator.
+    \item $T^d$ for $d\geq 6$ also satisfies the requirement but with
+          $\binom{d}{5}>1$ independent $5$-cycles; the minimal geometry
+          is $T^5$.
+  \end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Parts~(i) and~(ii) follow immediately from \cref{lem:h5} and the
+definition of the WZW term as a $5$-form integral.
+Part~(iii) follows from $\binom{d}{5}=1$ only at $d=5$.
+\end{proof}
+
+\paragraph{The conditional assumption.}
+\cref{prop:d5minimal} is a Tier~2 result.  Its one conditional
+assumption is:
+
+\begin{quote}
+\textbf{Assumption~W (WZW requirement).}
+The SFST compact sector must accommodate a non-trivial topological
+winding number in $\pi_5(\mathrm{SU}(3))\cong\mathbb{Z}$, i.e.\ the
+compact space must carry a non-zero SU(3)-WZW charge.
+\end{quote}
+
+This assumption is physically motivated: the WZW term captures the
+quantum anomaly structure of QCD baryons and is required for the
+correct counting of baryon number in any effective SU(3) theory
+(Witten 1983; Skyrme 1961).  It is, however, an assumption about which
+topological sector SFST must include, not a theorem of the current
+framework.
+
+\paragraph{What $T^5$ as \emph{flat} torus requires.}
+\cref{prop:d5minimal} also requires the compact space to be a flat
+torus, not an arbitrary $d=5$ manifold.  This is consistent with the
+SFST framework (which uses $T^5_R$ throughout) but is an additional
+structural input that is not derived from Assumption~W alone.
+
+%% ----------------------------------------------------------------
+\subsection{Combined impact on the proof chain}
+\label{ssec:combinedImpact}
+
+\cref{prop:c6,prop:d5minimal} together advance the SFST proof chain
+as follows.
+
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{lccc}
+\toprule
+Input & Before this appendix & After this appendix & Source \\
+\midrule
+$c = 6$ & Free parameter & Derived (Tier~1) &
+  $N!=2N$ unique at $N=3$, \cref{prop:c6} \\
+$d = 5$ & Numerical hint & Motivated (Tier~2) &
+  WZW minimality, \cref{prop:d5minimal} \\
+$R = \tfrac{1}{2}$ & Open (Barrier~B2) & Open & Holographic, Appendix~P \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\noindent
+The effective free-parameter count drops from three $(c, d, R)$
+to one $(R)$, conditional on SU(3) as the gauge group and on
+Assumption~W.
+
+\paragraph{What remains open.}
+The following barriers are not addressed by this appendix:
+\begin{itemize}[leftmargin=1.5em]
+  \item \textbf{B2 (radius).} $R=\tfrac{1}{2}$ is not derived here.
+        Its best current support is the holographic saturation
+        argument (Appendix~P, Tier~2, with Assumption~H).
+  \item \textbf{B1 ($\alpha^2/\sqrt{8}$).}  The normalisation of the
+        collective electromagnetic correction remains open.
+  \item \textbf{Matching.}  The proposition that the physical ratio
+        $m_p/m_e$ is controlled by the spectral observable
+        $c\cdot(2\pi R)^5$ is still an axiom, not a theorem.
+  \item \textbf{Flat torus vs.\ curved manifold.}
+        \cref{prop:d5minimal} selects $T^5$ as the minimal \emph{flat}
+        five-torus, but does not exclude curved five-manifolds.
+        The preference for $T^5_R$ over, e.g., $S^5$ or a Calabi--Yau
+        threefold requires a separate structural argument.
+\end{itemize}
+
+These points are recorded in the standard open-problem list of the
+main text and supplement.  The contribution of this appendix is to
+close the factor-$6$ problem entirely (Tier~1) and to provide a
+mathematically precise conditional argument for the five-dimensional
+geometry (Tier~2), replacing two previously unexplained numerical
+choices with independent structural reasoning.
