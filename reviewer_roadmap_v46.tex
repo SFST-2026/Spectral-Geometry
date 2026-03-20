@@ -1,0 +1,257 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{cmap}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=0.78in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\hypersetup{colorlinks=true,linkcolor=blue!60!black,
+  pdftitle={Reviewer Roadmap -- Spectral Geometry on T5 v46},
+  pdfauthor={Martin Wolfgang Le Borgne},
+  pdfsubject={m_p/m_e = 6 pi^5 (1 + alpha^2/sqrt(8)) = 1836.15268; 20 parameter-free empirical consequences; Working Hypothesis M: unique self-consistent fixed point},
+  pdfkeywords={SFST, reviewer roadmap, falsifiable predictions, spectral geometry}}
+\setlength{\parskip}{0.3em}
+\setlength{\parindent}{0pt}
+\pagestyle{fancy}\fancyhf{}
+\lhead{SFST v46 --- Reviewer Roadmap}\rhead{\thepage/\pageref{LastPage}}
+\setlength{\headheight}{14pt}
+
+\definecolor{tier1}{HTML}{D4EDDA}
+\definecolor{tier2}{HTML}{FFF3CD}
+\definecolor{tier3}{HTML}{F8D7DA}
+
+\title{\vspace{-2em}\textbf{Reviewer Roadmap}\\[0.3em]
+\large Spectral Geometry on $T^5$ with SU(3): Algebraic Identities and Their Physical Consequences\\[0.2em]
+\normalsize v46 --- March 2026}
+\author{Martin Wolfgang Le Borgne}
+\date{}
+
+\begin{document}
+\maketitle\thispagestyle{fancy}\vspace{-2em}
+
+\section*{What the paper claims}
+
+One axiom (the matching map, Axiom~M) plus the spectral geometry of
+$T^5$ with SU(3) gauge field yields \textbf{20 parameter-free empirical consequences},
+including three high-precision numerical values:
+\begin{center}
+\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{lll}
+\toprule
+\textbf{Prediction} & \textbf{Formula} & \textbf{Accuracy}\\
+\midrule
+V1: proton--electron mass ratio & $m_p/m_e = 6\pi^5(1+\alpha^2/\!\sqrt{8})$ & 0.002\,ppm\\
+V3: fine-structure constant & $-2\ln\alpha = \pi^2-4\alpha+c_2\alpha^2$ & 0.009\,ppm\\
+V2: neutron--proton splitting & $\Delta m/m_e = 8/\pi-2\alpha$ & 354\,ppm\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section*{Proof architecture: what is proven and what is not}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.15}\small
+\begin{tabular}{>{\raggedright}p{5.5cm}cp{5.5cm}}
+\toprule
+\textbf{Result} & \textbf{Tier} & \textbf{Location / Script}\\
+\midrule
+\rowcolor{tier1}
+$d=5$ uniqueness (4 conditions, unique intersection)
+  & 1 & Supp.\ Z1; \texttt{d5\_uniqueness.py}\\
+\rowcolor{tier1}
+Ramond BC uniqueness (permutation + sign + Hosotani)
+  & 1 & Supp.\ Z2; \texttt{ramond\_bc\_proof.py}\\
+\rowcolor{tier1}
+Hosotani global stability ($H=32.3\times I_5$)
+  & 1 & Supp.\ Z3; \texttt{hosotani\_global\_stability.py}\\
+\rowcolor{tier1}
+$Q_u\!=\!2/3$, $Q_d\!=\!-1/3$ from $Q_p\!=\!1$, $Q_n\!=\!0$
+  & 1 & Supp.\ Z4; \texttt{quark\_charge\_derivation.py}\\
+\rowcolor{tier1}
+$c_2=\tfrac52\ln 2-\tfrac38$ unique (sensitivity test)
+  & 1 & Supp.\ Z5; \texttt{c2\_schema\_independence.py}\\
+\rowcolor{tier1}
+$1/\!\sqrt{8}$ from 3 routes (scheme-independent $\alpha_s$)
+  & 1 & Supp.\ Z, Z6; \texttt{smooth\_cutoff\_closing\_gap.py}\\
+\rowcolor{tier1}
+$R$-independence ($6\pi^5$ for all $R$; no T-duality needed)
+  & 1 & Supp.\ Z7; \texttt{R\_half\_independence.py}\\
+\rowcolor{tier1}
+$\alpha^1$-cancellation ($\sum Q^2=1$)
+  & 1 & Supp.\ Z; \texttt{trace\_computation.py}\\
+\rowcolor{tier1}
+Weyl identity ($6\pi^5$ exact)
+  & 1 & Paper Thm.\ (Weyl identity)\\
+\rowcolor{tier1}
+Epstein zeta uniqueness (50-digit)
+  & 1 & \texttt{epstein\_zeta\_direct.py}\\
+\midrule
+\rowcolor{tier2}
+$c_3\approx 0.051$ (numerical, no closed form)
+  & 2 & \texttt{c3\_derivation.py}\\
+\rowcolor{tier2}
+$\sin^2\theta_W(\Lambda)=3/8$ (qualitative)
+  & 2--3 & Supp.\ Z8\\
+\midrule
+\rowcolor{tier1}
+Toy model: matching is an \emph{identity} in $d=1,\ldots,5$
+  & 1 & Supp.\ Z13; \texttt{toy\_model\_axiom\_m.py}\\
+\rowcolor{tier1}
+Triple verification of $\bar K=\pi^{5/2}$ (30+ digits, 3 methods)
+  & 1 & Supp.\ Z10; \texttt{triple\_normalization\_check.py}\\
+\rowcolor{tier2}
+EW correction: $\delta_{\mathrm{EW}}\approx 3\,$ppb
+  (W cancels; Z residual only)
+  & 2 & Supp.\ Z11; \texttt{ew\_2loop\_upper\_bound.py}\\
+\rowcolor{tier2}
+Bootstrap closure: WH~M is the unique self-consistent fixed point
+  & 1--2 & Supp.\ Z12; \texttt{bootstrap\_closure.py}\\
+\midrule
+\rowcolor{tier3}
+\textbf{Working Hypothesis~M} (matching map: spectral data $\to$ mass ratio)
+  & 3 & Paper \S 5; \textbf{structure proven, value tested by 20 predictions}\\
+\rowcolor{tier3}
+$\pi^7$-bridge ($6/\pi^2\to 6\pi^5$; equiv.\ to QCD mass gap on $T^5$)
+  & 3 & Supp.\ Z13\\
+\bottomrule
+\end{tabular}\\[0.5em]
+\colorbox{tier1}{\strut\small\ Tier~1: proven\ }\quad
+\colorbox{tier2}{\strut\small\ Tier~2: closed with small residual\ }\quad
+\colorbox{tier3}{\strut\small\ Tier~3: open\ }
+\end{center}
+
+\section*{Working Hypothesis~M --- why it is maximally constrained}
+
+\textbf{Working Hypothesis~M} connects 5D spectral geometry (UV) to 4D hadron masses (IR).
+It is supported by four independent lines of evidence:
+
+\paragraph{1.\ Structural uniqueness (Z9).}
+Five general principles (P1--P5) force the \emph{unique} form
+$m_p/m_e = |W|\cdot[\bar K(\sigma^*)]^{n_p-n_e}$:
+
+\begin{center}
+\renewcommand{\arraystretch}{1.15}\small
+\begin{tabular}{clp{6.8cm}}
+\toprule
+& \textbf{Principle} & \textbf{What it forces}\\
+\midrule
+P1 & Spectral origin & $\ln(m_p/m_e)$ linear in spectral data\\
+P2 & Multiplicativity & data $=$ heat kernel $\Theta_3(1)^5$\\
+P3 & $R$-independence & argument is $\sigma^*/R^2=1$ (self-dual point)\\
+P4 & Topological quantization & exponent $n_p-n_e\in\mathbb{Z}$\\
+P5 & Gauge covariance & overall factor $|W(\mathrm{SU}(3))|=6$\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\paragraph{2.\ Toy-model realization (Z13).}
+On product tori $T^d$ ($d=1,\ldots,5$), the matching map is not a
+hypothesis but an \emph{identity}: the spectral determinant ratio
+gives $m_p/m_e = [\sin(\pi\theta)/\pi]^{d/2} = \pi^{-d/2} = 1/\bar K$
+\emph{exactly}. The SFST adds two standard physics ingredients:
+$|W|=6$ (color-singlet projection) and $\Delta n=2$ (instanton topology).
+
+\paragraph{3.\ Bootstrap closure (Z12).}
+Working Hypothesis~M is the \emph{unique} self-consistent fixed point:
+
+\begin{center}
+\renewcommand{\arraystretch}{1.1}\small
+\begin{tabular}{lll}
+\toprule
+\textbf{Parameter} & \textbf{Allowed} & \textbf{Alternative}\\
+\midrule
+$|W|$ & $6$ (unique integer) & $5\to -17\%$; $7\to +17\%$\\
+$\Delta n$ & $2$ (unique integer) & $1\to -94\%$; $3\to +1649\%$\\
+$c_2$ & $[0.86,\,1.86]$ & Elizalde $1.358$ is central\\
+$\delta_{\mathrm{EW}}$ & $[-8.3,\,+3.7]\,$ppb & estimate ${\approx}\,3\,$ppb $\checkmark$\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\paragraph{4.\ Triple normalization check (Z10).}
+$\bar K = \pi^{5/2}$ verified to 30+ digits by three independent methods:
+(i)~algebraic (Seeley--DeWitt),
+(ii)~Chowla--Selberg lattice sum,
+(iii)~theta function $+$ Poisson resummation.
+Seeley--DeWitt coefficients $a_0,a_1$ cancel exactly in the ratio;
+$a_2$ gives the finite $\alpha^2/\!\sqrt{8}$ correction.
+
+\paragraph{The Lovelock analogy (Z9).}
+In GR, Lovelock's theorem determines the \emph{structure} of Einstein's
+equation from general principles; $\Lambda$ remains free.
+WH~M is analogous: P1--P5 determine its form, the toy model confirms
+its mechanism, and the bootstrap shows it is the unique fixed point.
+
+\paragraph{Electroweak correction (Z11).}
+The $W$-boson contribution \emph{cancels} in the ratio
+(same $\mathrm{SU}(2)$ Casimir $C_2=3/4$ for quarks and electrons).
+The surviving $Z$-boson correction is $\delta_{\mathrm{EW}} \approx 3\,$ppb
+(range $0.5$--$50\,$ppb), consistent with the $+2.3\,$ppb residual
+and below current experimental precision (${\sim}\,6\,$ppb).
+
+\section*{Falsifiable tests}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.15}\small
+\begin{tabular}{lp{4cm}p{4.5cm}}
+\toprule
+\textbf{Prediction} & \textbf{Experiment} & \textbf{What kills SFST}\\
+\midrule
+V1: $m_p/m_e$ to $10^{-11}$
+  & Penning trap (BASE, ALPHATRAP)
+  & Deviation $>0.01\,$ppm at known $\alpha$\\
+V3: $\alpha$ from $\pi$, $\ln 2$
+  & Cs-133 interferometry
+  & 2-loop value disagrees at $10^{-10}$\\
+V18: $\theta_{\mathrm{QCD}}=0$
+  & nEDM (PSI, SNS) at $10^{-28}\,e\!\cdot\!\mathrm{cm}$
+  & Nonzero nEDM or axion detection\\
+V20: Proton stable
+  & Hyper-K, DUNE to $10^{35}\,$yr
+  & \emph{Any} proton decay event\\
+V21: $N_{\mathrm{gen}}=3$
+  & LHC Run~3+
+  & 4th-generation fermion discovery\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section*{Key implications if confirmed}
+
+\begin{enumerate}[leftmargin=1.5em,itemsep=0.2em]
+\item $\alpha$ is computable $\Rightarrow$ 18 not 19 SM parameters; multiverse
+  motivation for $\alpha$ collapses.
+\item $\theta_{\mathrm{QCD}}=0$ without axion $\Rightarrow$ dark-matter
+  searches must redirect from axion detectors (ADMX, MADMAX, CASPEr).
+\item $d=5$ not $10$ or $11$ $\Rightarrow$ string theory in standard form
+  is incomplete; the landscape problem would be significantly constrained.
+\item Proton absolutely stable $\Rightarrow$ GUT-mediated proton decay channels are excluded;
+  baryogenesis via leptogenesis.
+\item $N_c=3$ is geometric $\Rightarrow$ the strong force is determined by
+  the dimensionality of space, not by accident.
+\end{enumerate}
+
+\section*{Computational reproducibility}
+
+All numerical claims are verified by Python scripts in the repository
+(\texttt{scripts/} directory, 36 files). Each script runs in under 5\,min
+on a standard laptop or Google Colab. Key dependencies: \texttt{mpmath}
+(50-digit arithmetic), \texttt{numpy}, \texttt{scipy}.
+
+\paragraph{Key scripts.}
+\texttt{toy\_model\_axiom\_m.py} (identity in $d=1$--$5$);
+\texttt{triple\_normalization\_check.py} (3 methods, 30 digits);
+\texttt{bootstrap\_closure.py} (unique fixed point);
+\texttt{ew\_2loop\_upper\_bound.py} ($W$ cancellation $+$ $Z$ bound);
+\texttt{explicit\_1loop\_matching.py} (full derivation of $6\pi^5$).
+
+\vfill
+
+\end{document}
