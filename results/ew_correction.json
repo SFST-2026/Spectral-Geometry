@@ -1,9 +1,0 @@
-{
-  "delta_EW_central_ppb": 3.0,
-  "delta_EW_range_ppb": [
-    0.5,
-    50
-  ],
-  "W_cancellation": true,
-  "residual_ppb": 2.3
-}
