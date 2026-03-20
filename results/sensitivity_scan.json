@@ -1,0 +1,29 @@
+{
+  "R_variation": {
+    "range": "[0.3,0.7]",
+    "effect": "<1e-30",
+    "status": "R-independent"
+  },
+  "Hosotani_a": {
+    "range": "[0.49,0.51]",
+    "effect": "<1e-6",
+    "status": "global minimum"
+  },
+  "Delta_n": {
+    "values": [
+      1,
+      2,
+      3
+    ],
+    "unique": 2
+  },
+  "anisotropy": {
+    "range": "[0,0.05]",
+    "effect": "O(eps^2)"
+  },
+  "regulator": {
+    "types": 5,
+    "effect": "<1e-30",
+    "status": "proven"
+  }
+}
