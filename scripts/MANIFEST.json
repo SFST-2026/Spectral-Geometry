@@ -1,1 +1,137 @@
-
+[
+  {
+    "script": "T01_01_ramond_bc.py",
+    "tier": "0+1",
+    "description": "==============================================================================="
+  },
+  {
+    "script": "T01_02_c2_derivation.py",
+    "tier": "0+1",
+    "description": "==============================================================================="
+  },
+  {
+    "script": "T01_03_gravity_ratio.py",
+    "tier": "0+1",
+    "description": "==============================================================================="
+  },
+  {
+    "script": "T01_04_c2_hurwitz_verify.py",
+    "tier": "0+1",
+    "description": "Verify c2 = (5/2)ln2 - 3/8 via Hurwitz identity and CODATA cross-check."
+  },
+  {
+    "script": "T0_01_hosotani_stability.py",
+    "tier": "0",
+    "description": "==============================================================================="
+  },
+  {
+    "script": "T0_02_epstein_zeta.py",
+    "tier": "0",
+    "description": "DEFINITIVE COMPUTATION: Z_{E_d}(-1/2) for d = 1..5"
+  },
+  {
+    "script": "T0_03_Kbar_triple_check.py",
+    "tier": "0",
+    "description": "==============================================================================="
+  },
+  {
+    "script": "T0_04_R_independence.py",
+    "tier": "0",
+    "description": "==============================================================================="
+  },
+  {
+    "script": "T0_05_spectral_action.py",
+    "tier": "0",
+    "description": "SPECTRAL ACTION AUF T\u2075: Maxwell + Einstein als Spezialfall"
+  },
+  {
+    "script": "T1_01_d5_uniqueness.py",
+    "tier": "1",
+    "description": "==============================================================================="
+  },
+  {
+    "script": "T1_02_sqrt8_three_routes.py",
+    "tier": "1",
+    "description": "==============================================================================="
+  },
+  {
+    "script": "T1_03_bootstrap_uniqueness.py",
+    "tier": "1",
+    "description": "==============================================================================="
+  },
+  {
+    "script": "T1_04_toy_model.py",
+    "tier": "1",
+    "description": "==============================================================================="
+  },
+  {
+    "script": "T1_05_c3_independent.py",
+    "tier": "1",
+    "description": "Bestimme den EXAKTEN Faktor c\u2083_raw/c\u2083_CODATA bei steigendem M_cut."
+  },
+  {
+    "script": "T1_06_ew_absorption.py",
+    "tier": "1",
+    "description": "RESOLUTION: Warum \u03b4_EW = 0 (exakt, Tier 1)"
+  },
+  {
+    "script": "T1_07_entanglement.py",
+    "tier": "1",
+    "description": "==============================================================================="
+  },
+  {
+    "script": "T1_08_gap_analysis.py",
+    "tier": "1",
+    "description": "THE 6.66 GAP: ANALYTICAL DEEP DIVE"
+  },
+  {
+    "script": "T1_09_weyl_orbit.py",
+    "tier": "1",
+    "description": "==============================================================================="
+  },
+  {
+    "script": "T1_10_weyl_orbit_clean.py",
+    "tier": "1",
+    "description": "|W| = 6 aus dem Instanton-Sektor \u2014 SAUBERER BEWEIS."
+  },
+  {
+    "script": "T1_11_matching_map.py",
+    "tier": "1",
+    "description": "==============================================================================="
+  },
+  {
+    "script": "T1_12_predictions.py",
+    "tier": "1",
+    "description": "==============================================================================="
+  },
+  {
+    "script": "T1_13_genuine_predictions.py",
+    "tier": "1",
+    "description": "GENUINE VORHERSAGEN AUS T\u2075 + SU(3) \u2014 EHRLICHE ANALYSE"
+  },
+  {
+    "script": "UTIL_01_colab_notebook.py",
+    "tier": "util",
+    "description": "==============================================================================="
+  },
+  {
+    "script": "UTIL_02_heat_kernel_fast.py",
+    "tier": "util",
+    "description": "N_cut=50 Heat Kernel \u2014 FACTORIZED via Jacobi theta functions."
+  },
+  {
+    "script": "UTIL_03_sensitivity.py",
+    "tier": "util",
+    "description": "SFST v48 \u2014 Systematic Sensitivity Scan"
+  },
+  {
+    "script": "UTIL_04_alpha_solver.py",
+    "tier": "util",
+    "description": "Solve the SFST alpha-relation at 1-loop and 2-loop."
+  },
+  {
+    "script": "UTIL_05_unit_tests.py",
+    "tier": "util",
+    "description": "SFST v48 \u2014 Unit Tests"
+  }
+]
