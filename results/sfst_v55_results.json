@@ -1,0 +1,43 @@
+{
+  "V1_mass_ratio": {
+    "formula": "6*pi^5*(1 + alpha^2/sqrt(8))",
+    "value": "1836.152677668887365",
+    "CODATA": "1836.15267343",
+    "residual_ppm": "0.002308"
+  },
+  "V3_alpha": {
+    "formula": "-2*ln(alpha) = pi^2 - 4*alpha + c2*alpha^2",
+    "value": "0.007297352634353987",
+    "CODATA": "0.0072973525643",
+    "residual_ppm": "0.009599",
+    "c2": "1.357867951399863273"
+  },
+  "V2_neutron_proton": {
+    "formula": "8/pi - 2*alpha",
+    "value_me_units": "2.5318843843417",
+    "value_MeV": "1.293790",
+    "exp_MeV": "1.293332",
+    "residual_ppm": "354"
+  },
+  "constants": {
+    "pi5": "306.0196847852814532",
+    "6pi5": "1836.118108711688719",
+    "S0": "9.869604401089358618",
+    "c2": "1.357867951399863273",
+    "c3": "0.048690955374786",
+    "Kbar": "17.49341832762486284",
+    "Weyl_order": "6",
+    "d_S": "4",
+    "delta_gap": "0.5026093844",
+    "P_perturbative": "23.3972071014",
+    "gap": "6.6644378769"
+  },
+  "tier_summary": {
+    "tier_0": 9,
+    "tier_0plus1": 5,
+    "tier_1": 12,
+    "tier_2": 0,
+    "tier_3": 0,
+    "total_predictions": 33
+  }
+}

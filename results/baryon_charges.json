@@ -1,0 +1,65 @@
+{
+  "proton": {
+    "quarks": "uud",
+    "mass_MeV": 938.272,
+    "mass_over_me": 1836.1525009004422,
+    "mass_over_6pi5me": 1.0000187309240023,
+    "sum_Q2": 1.0,
+    "sum_QiQj": 0.0,
+    "SFST_candidate": true
+  },
+  "neutron": {
+    "quarks": "udd",
+    "mass_MeV": 939.565,
+    "mass_over_me": 1838.6828387807843,
+    "mass_over_6pi5me": 1.0013968219456728,
+    "sum_Q2": 0.6666666666666666,
+    "sum_QiQj": -0.3333333333333333,
+    "SFST_candidate": false
+  },
+  "Sigma+": {
+    "quarks": "uus",
+    "mass_MeV": 1189.37,
+    "mass_over_me": 2327.5390291897857,
+    "mass_over_6pi5me": 1.2676412362290257,
+    "sum_Q2": 1.0,
+    "sum_QiQj": 0.0,
+    "SFST_candidate": true
+  },
+  "Sigma0": {
+    "quarks": "uds",
+    "mass_MeV": 1192.64,
+    "mass_over_me": 2333.9382595600246,
+    "mass_over_6pi5me": 1.2711264316202573,
+    "sum_Q2": 0.6666666666666666,
+    "sum_QiQj": -0.3333333333333333,
+    "SFST_candidate": false
+  },
+  "Xi0": {
+    "quarks": "uss",
+    "mass_MeV": 1314.86,
+    "mass_over_me": 2573.1168332146276,
+    "mass_over_6pi5me": 1.401389606151237,
+    "sum_Q2": 0.6666666666666666,
+    "sum_QiQj": -0.3333333333333333,
+    "SFST_candidate": false
+  },
+  "Lambda": {
+    "quarks": "uds",
+    "mass_MeV": 1115.68,
+    "mass_over_me": 2183.33129647331,
+    "mass_over_6pi5me": 1.1891017718926824,
+    "sum_Q2": 0.6666666666666666,
+    "sum_QiQj": -0.3333333333333333,
+    "SFST_candidate": false
+  },
+  "Omega-": {
+    "quarks": "sss",
+    "mass_MeV": 1672.45,
+    "mass_over_me": 3272.9030069435566,
+    "mass_over_6pi5me": 1.7825122422217092,
+    "sum_Q2": 0.3333333333333333,
+    "sum_QiQj": 0.3333333333333333,
+    "SFST_candidate": false
+  }
+}

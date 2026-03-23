@@ -1,1 +1,35 @@
+SFST v55 — Key Numerical Results
+==================================================
 
+V1: m_p/m_e = 1836.152677668887365
+    CODATA  = 1836.15267343
+    Residual: 0.002308 ppm
+
+V3: alpha   = 0.007297352634353987
+    CODATA  = 0.0072973525643
+    Residual: 0.009599 ppm
+
+V2: Δm(n-p) = 1.293790 MeV
+    Exp     = 1.293332 MeV
+    Residual: 354 ppm
+
+Key Constants:
+  pi5                  = 306.0196847852814532
+  6pi5                 = 1836.118108711688719
+  S0                   = 9.869604401089358618
+  c2                   = 1.357867951399863273
+  c3                   = 0.048690955374786
+  Kbar                 = 17.49341832762486284
+  Weyl_order           = 6
+  d_S                  = 4
+  delta_gap            = 0.5026093844
+  P_perturbative       = 23.3972071014
+  gap                  = 6.6644378769
+
+Tier Summary:
+  tier_0               = 9
+  tier_0plus1          = 5
+  tier_1               = 12
+  tier_2               = 0
+  tier_3               = 0
+  total_predictions    = 33

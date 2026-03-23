@@ -1,0 +1,72 @@
+[
+  {
+    "id": "V1",
+    "description": "m_p/m_e",
+    "predicted": "1836.1526776688875",
+    "experimental": "1836.15267343",
+    "tier": "1"
+  },
+  {
+    "id": "V2",
+    "description": "Delta_m/m_e",
+    "predicted": "2.5318843843417254",
+    "experimental": "2.53103",
+    "tier": "1"
+  },
+  {
+    "id": "V3",
+    "description": "alpha",
+    "predicted": "0.007297352634353988",
+    "experimental": "0.0072973525643",
+    "tier": "1"
+  },
+  {
+    "id": "V22",
+    "description": "theta_QCD",
+    "predicted": "0",
+    "experimental": "0",
+    "tier": "0+1"
+  },
+  {
+    "id": "V23",
+    "description": "tau_proton",
+    "predicted": ">10^1000 yr",
+    "experimental": ">10^35 yr",
+    "tier": "1"
+  },
+  {
+    "id": "V24",
+    "description": "Lambda",
+    "predicted": ">0",
+    "experimental": ">0",
+    "tier": "1"
+  },
+  {
+    "id": "V26",
+    "description": "m_n/m_e",
+    "predicted": "1838.684562053229",
+    "experimental": "1838.68366173",
+    "tier": "1"
+  },
+  {
+    "id": "V30",
+    "description": "N_gen",
+    "predicted": "3",
+    "experimental": "3",
+    "tier": "0+1"
+  },
+  {
+    "id": "V31",
+    "description": "neutrino_type",
+    "predicted": "Dirac",
+    "experimental": "TBD",
+    "tier": "0+1"
+  },
+  {
+    "id": "V32",
+    "description": "sum_m_nu_eV",
+    "predicted": "0.08",
+    "experimental": "0.06-0.12",
+    "tier": "2"
+  }
+]
