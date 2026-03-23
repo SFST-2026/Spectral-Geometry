@@ -1,1 +1,27 @@
+% Appendix A: Complete Step-by-Step Derivation (Summary)
+% Full version: paper/sfst_paper_v55.tex, Section 12
 
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb}
+\begin{document}
+\section*{Appendix A: Step-by-Step Derivation (Summary)}
+
+\textbf{Step 1:} Isotropic $T^5$ with circumference $L = 2\pi R$.
+$\mathrm{Vol}(T^5) = (2\pi R)^5$.
+
+\textbf{Step 2:} U(1) flux quantum on $T^2 \subset T^5$:
+$F_{12} = 2\pi n / \mathrm{Vol}(T^2) = n/(2\pi R^2)$ for $n=1$.
+(Dirac quantization; Nakahara 2003, Ch.~11.)
+
+\textbf{Step 3:} Yang--Mills action (Peskin--Schroeder, Ch.~15):
+$S_{\mathrm{YM}} = (1/4e_5^2) \int_{T^5} 2F_{12}^2\, d^5x = 4\pi^3 R / e_5^2$.
+
+\textbf{Step 4:} KK reduction: $e_5^2 = 4\pi\alpha \times 2\pi R$
+$\Rightarrow S_{\mathrm{YM}} = \pi/(2\alpha)$.
+Self-dual instanton on $T^2 \times T^2$: $S_0 = \pi^2$.
+
+\textbf{Step 5:} $R$-independence: $\mathrm{Vol}(T^5)/(4\pi R^2)^{5/2} = \pi^{5/2}$ for all $R$.
+
+\textbf{Step 6:} Assembly: $m_p/m_e = |W| \cdot \bar{K}^{\Delta n} \cdot (1 + \alpha^2/\sqrt{8}) = 6\pi^5(1+\alpha^2/\sqrt{8})$.
+
+\end{document}

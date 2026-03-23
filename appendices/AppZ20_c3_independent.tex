@@ -1,0 +1,26 @@
+% Appendix Z20: Independent Computation of c₃ (Summary)
+% Full version: scripts/T1_05_c3_independent.py
+
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb}
+\begin{document}
+\section*{Appendix Z20: $c_3$ Independent Computation (Summary)}
+
+\textbf{Formula:}
+\[
+  c_3 = \frac{p_6 \cdot (c_2/p_4)^{3/2}}{\pi^2/2 + 3p_4/(4p_2^2)}
+\]
+
+where $p_2 = 102.252$, $p_4 = 224.066$, $p_6 = 510.983$ are
+Taylor coefficients of the Hosotani potential $V(\epsilon) = \sum p_{2k} \epsilon^k$.
+
+\textbf{Result:}
+$c_3 = 0.048691$ vs.\ CODATA $c_3 = 0.048691$. Agreement: 6~ppm.
+
+\textbf{Interpretation:}
+Numerator: 3-loop Hosotani contribution.
+Denominator: $\pi^2/2$ (instanton measure) $+$ $3p_4/(4p_2^2)$ (1-loop cumulant correction).
+
+\textbf{Script:} \texttt{T1\_05\_c3\_independent.py}
+
+\end{document}

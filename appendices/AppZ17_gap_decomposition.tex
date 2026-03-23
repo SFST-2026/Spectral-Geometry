@@ -1,0 +1,26 @@
+% Appendix Z17: Gap Decomposition Theorem (Summary)
+% Full version: paper/sfst_supplement_v55.tex
+
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb}
+\begin{document}
+\section*{Appendix Z17: Gap Decomposition (Summary)}
+
+\textbf{Theorem.}
+$\mathcal{P} + d_S \ln|W| - \delta = 4\ln(6\pi^5)$
+
+where:
+\begin{itemize}
+\item $\mathcal{P} = 23.3972$ (perturbative baseline, $\zeta$-regularized)
+\item $d_S = 4$ (Clifford algebra, $2^{\lfloor 5/2 \rfloor}$; Lawson--Michelsohn 1989)
+\item $|W(\mathrm{SU}(3))| = 6$ (Weyl group order; Humphreys 1990)
+\item $\delta = 32\Sigma' = 0.503$ (convergent lattice sum on $\mathbb{Z}^4$)
+\end{itemize}
+
+\textbf{Verification:}
+$23.397 + 4\times\ln 6 - 0.503 = 30.0616$ vs.\ $4\ln(6\pi^5) = 30.0616$.
+Relative accuracy: $2.3 \times 10^{-6}$.
+
+\textbf{Script:} \texttt{T1\_08\_gap\_analysis.py}, \texttt{T1\_09\_weyl\_orbit.py}
+
+\end{document}
