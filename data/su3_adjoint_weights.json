@@ -1,0 +1,66 @@
+[
+  {
+    "label": "zero_1",
+    "weight": [
+      0,
+      0
+    ],
+    "wa": 0.0
+  },
+  {
+    "label": "zero_2",
+    "weight": [
+      0,
+      0
+    ],
+    "wa": 0.0
+  },
+  {
+    "label": "alpha_1",
+    "weight": [
+      1,
+      0
+    ],
+    "wa": 1.0
+  },
+  {
+    "label": "-alpha_1",
+    "weight": [
+      -1,
+      0
+    ],
+    "wa": -1.0
+  },
+  {
+    "label": "alpha_2",
+    "weight": [
+      0.5,
+      0.5
+    ],
+    "wa": 0.5
+  },
+  {
+    "label": "-alpha_2",
+    "weight": [
+      -0.5,
+      -0.5
+    ],
+    "wa": -0.5
+  },
+  {
+    "label": "alpha_1+alpha_2",
+    "weight": [
+      0.5,
+      -0.5
+    ],
+    "wa": 0.5
+  },
+  {
+    "label": "-(alpha_1+alpha_2)",
+    "weight": [
+      -0.5,
+      0.5
+    ],
+    "wa": -0.5
+  }
+]

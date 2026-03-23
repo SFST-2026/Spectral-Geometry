@@ -1,1 +1,44 @@
-
+{
+  "a_star": [
+    0.5,
+    0.0,
+    -0.5
+  ],
+  "stabilizer": "trivial (entries pairwise distinct)",
+  "orbit_size": 6,
+  "orbit_points": [
+    [
+      0.5,
+      0.0,
+      -0.5
+    ],
+    [
+      0.5,
+      -0.5,
+      0.0
+    ],
+    [
+      0.0,
+      0.5,
+      -0.5
+    ],
+    [
+      0.0,
+      -0.5,
+      0.5
+    ],
+    [
+      -0.5,
+      0.5,
+      0.0
+    ],
+    [
+      -0.5,
+      0.0,
+      0.5
+    ]
+  ],
+  "all_traceless": true,
+  "Weyl_group": "S_3 (symmetric group on 3 elements)",
+  "|W|": 6
+}

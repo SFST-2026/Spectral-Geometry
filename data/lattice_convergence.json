@@ -1,0 +1,32 @@
+{
+  "Ls4_r0.5": {
+    "Ls": 4,
+    "r": 0.5,
+    "value": 35.4,
+    "status": "coarse"
+  },
+  "Ls4_r1.0": {
+    "Ls": 4,
+    "r": 1.0,
+    "value": 137.3,
+    "status": "coarse"
+  },
+  "Ls4_r0.0": {
+    "Ls": 4,
+    "r": 0.0,
+    "value": 10354,
+    "status": "artifact"
+  },
+  "Ls5_r0.5": {
+    "Ls": 5,
+    "r": 0.5,
+    "value": 23.27,
+    "status": "convergent"
+  },
+  "analytical": {
+    "method": "zeta-regularized",
+    "value": 23.3972,
+    "status": "exact"
+  },
+  "agreement_Ls5_vs_analytical": "0.5%"
+}
